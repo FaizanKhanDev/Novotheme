@@ -1,0 +1,77 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block main-content %}
+
+
+
+
+<div class="height" style="width: 100%; height: 80px; background-color: black;"></div>
+<div class="contact">
+    <div>
+        <br /> <br />
+        {% for contactus in contactus %}
+        <h1 class="contact-title">
+            Contact Us
+        </h1>
+        <div class="contact-grid">
+            <div class="contact-sec-1">
+                <p class="text-center">
+                    <ion-icon name="phone-portrait-outline"></ion-icon>
+                </p>
+                <br />
+            
+                <p class="text-center">  {{contactus.phone}}</p>
+            </div>
+            <div class="contact-sec-1">
+                <p class="text-center">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </p>
+                <br />
+                <p class="text-center">
+                {{contactus.email}}
+                </p>
+            </div>
+            <div class="contact-sec-1">
+                <p class="text-center">
+                    <ion-icon name="location-outline"></ion-icon>
+                </p>
+                <br />
+                <p class="text-center">
+                    {{contactus.location}}
+                </p>
+            </div>
+        
+        
+        
+        
+        </div>
+        <div class="main-description">
+            <p class="text-center descriptionofcontact">
+               {{contactus.description}}
+            </p>
+        </div>
+    {% endfor %}
+    <div class="contact-form">
+        <br />
+        <h1 class="contact-title mt-4 letsdiscuss">
+            let's Discuss About Your Projects
+        </h1>
+        <div class="form">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {% for fm in form %}
+                    {{fm.label_tag}} <br />{{fm}}  <br /> {{fm.error|striptags}}
+                {% endfor %}
+                <br />
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        
+    </div>
+    
+</div>
+
+</div>
+ <br />
+ <br />
+{% endblock main-content %}

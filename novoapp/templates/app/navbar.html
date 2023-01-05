@@ -1,0 +1,136 @@
+{% load static %}
+<!-- <div id="loading">
+    <div class="content">
+        <div class="content__container">
+          <p class="content__container__text">
+            Hello
+          </p>
+          
+          <ul class="content__container__list">
+            <li class="content__container__list__item">Faizan</li>
+            <li class="content__container__list__item">Usama Bhai !</li>
+            <li class="content__container__list__item">users !</li>
+            <li class="content__container__list__item">everybody !</li>
+          </ul>
+        </div>
+      </div>
+</div> -->
+
+<nav id="navbar">
+    <div class="left-nav">
+        <ion-icon name="menu-outline" id="left-menu-icon" onclick="sliderNav()"></ion-icon>
+        {% for logo in navlogo %}
+          <span class="left-menu-logo">{{logo.navlogo}}</span> 
+        {% endfor %}
+    </div>
+   
+    <ul id="rightnavitems" style="left:-100%;">
+        {%  for navitems in navitems %}
+        <li><a href="/"  {% if request.path == '/' %} class="active" {% endif %}>{{navitems.navitems_1}}</a></li>
+        <li><a href="{% url 'aboutus' %}" {% if request.path == '/aboutus/' %} class="active" {% endif %}>{{navitems.navitems_2}}</a></li>
+        <li><a href="{% url 'contactus' %}"  {% if request.path == '/contact/' %} class="active" {% endif %}>{{navitems.navitems_3}}</a></li>
+        <li><a href="{% url 'blog' %}" {% if request.path == '/blog/' %} class="active" {% endif %}>{{navitems.navitems_4}}</a></li>
+        <li><a class="subitems"  onclick="servicesItem()" style="cursor: pointer;">{{navitems.navitems_5}}</a>
+            <div class="drop-menu" id="servicessubitems">
+                <ul>
+                   <li  id="dropclose" onclick="dropclose()" style="cursor: pointer;"><ion-icon name="close-outline"></ion-icon></li> 
+                   <li><a href="{% url 'services' %}">All Services</a></li>
+                    {% for navsubitems in navsubitems %}
+                        <li><a href="#">{{navsubitems.navsubitem_1}}</a></li>
+                        <li><a href="">{{navsubitems.navsubitem_2}}</a></li>
+                        <li><a href="#">{{navsubitems.navsubitem_3}}</a></li>
+                        <li><a href="">{{navsubitems.navsubitem_4}}</a></li>
+                        <li><a href="">{{navsubitems.navsubitem_5}}</a></li>          
+                        <li class="nav-lastitem"><a href="#">{{navsubitems.navsubitem_6}}</a></li>
+                    {% endfor %}     
+                </ul>
+            </div>
+        </li>
+            <li>
+                <a href="{% url 'portfolio' %}" {% if request.path == '/portfolio/' %} class="active" {% endif %} >{{navitems.navitems_6}}</a>
+            </li>
+        {% endfor %} 
+    </ul>
+    <div class="nav-icon">
+        <a href="#"><ion-icon name="cart-outline"></ion-icon></a>
+        <a href="#"><ion-icon name="search-outline"></ion-icon></a>
+        <div class="hamburgermenu" onclick="rightNav(this)">
+            <div class="bar-1"></div>
+            <div class="bar-2"></div>
+            <div class="bar-3"></div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="progress-bar" id="mybar"></div>
+</header>
+<!-- === back to top btn === -->
+<div class="back-to-top" id="mybtn">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+</div>
+<!-- <button >Dark</button> -->
+<div class="dark-light" onclick="lightlogo()">
+    <p id="light">Light
+        <ion-icon name="sunny-outline"></ion-icon>
+    </p>
+    <p id="dark">Dark
+        <ion-icon name="moon-outline"></ion-icon>
+    </p>
+</div>
+
+ 
+    
+<div class="social-icons">
+
+    <a href="#">
+        <ion-icon name="logo-instagram"></ion-icon>
+        Instagram
+    </a> 
+    <a href="#">
+        <ion-icon name="logo-facebook"></ion-icon>
+        Facebook
+    </a> 
+</div>
+
+<div id="left-slide-menu">
+    <ion-icon name="close-outline" id="closeicon" onclick="closeLeftNav()"></ion-icon>
+        <div class="left-menu-content">
+            {% for leftmenu in leftmenu %}
+                <h1 class="left-menu-name">{{leftmenu.title}}</h1>
+                <p class="line-height-1 mt-4">{{leftmenu.descriptions}}</p>
+            {% endfor %}
+            
+                <div class="position-relative">
+                    {% for latestitle in latestitle %}
+                        <h1 class="text-center mb-2 latest-photos">{{latestitle.title}}</h1>
+                    {% endfor %}
+                </div>
+                <div class="left-menu-con">
+                    {% for lastestpicture in lastestpicture %}
+                    <div class="menu-con-sec1">
+                            <img src="{{lastestpicture.latestImg.url}}" alt="" style="width: 100px; height:100px;"  class="left-menu-img">
+                    </div>
+                    {% endfor %}
+                   
+                </div>
+                <div class="left-menu-contact">
+                    {% for leftcontact in leftcontact %}
+                        <h1 class="text-center">{{leftcontact.title}}</h1>
+                        <a href="https:/wa.me/923161541560" class="mt-2">
+                            <ion-icon name="logo-whatsapp" class="whatsapp"></ion-icon>
+                            <p>{{leftcontact.phone}}</p>
+                        </a> 
+                        <a href="mailto:faizan480khan@gmail.com">
+                            <ion-icon name="mail-outline" class="email"></ion-icon>
+                        <p> {{leftcontact.email}}</p> 
+                        </a>
+                        <p class="left-copyright">{{leftcontact.copyRight}}</p>
+                    {% endfor %}
+                </div>
+        </div>        
+</div>
+
+<!-- === back to top btn End  === -->
+
+
+<!-- === navbar End === -->

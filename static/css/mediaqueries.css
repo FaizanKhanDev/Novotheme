@@ -1,0 +1,420 @@
+/* :root {
+    --mybtn: #c99a67;
+    --text-w: #fff; 
+   --text-b: #000;
+} */
+
+html {
+    font-size: 20px !important;
+
+}
+
+@media (min-width:30px) and (max-width:599px) {
+    html {
+        font-size: 15px;
+    }
+    /* === navigation bar === */
+    .hamburgermenu {
+        display: block;
+        margin-right: 20px;
+    
+    }
+
+    .bar-1,.bar-2,.bar-3 {
+        width: 20px;
+        height: 1px;
+    }
+    .nav-icon a {
+        margin-right: 10px;
+    }
+    .change .bar-3 {
+        transform: translateY(-11px) rotate(322deg);
+    
+    }
+
+    #rightnavitems {
+        position: absolute;
+        left: -100%;
+
+    }
+    
+    nav ul {
+        display: block ;
+        width: 100vw;
+        background-color: #000;
+        position: absolute;
+        transition: 0.5s;
+        height: 100vh;
+        top: 85px;
+        left: -100%;
+    }
+    nav ul li {
+        text-align: center !important;
+        line-height: 2rem;
+    }
+    nav ul li {
+        margin-left: 0px;
+    }
+   
+    nav ul li a:hover::before {
+        width: 0px;
+    }
+   
+    .drop-menu {
+        display: none;
+        position: absolute;
+        z-index: 100000000000;
+        width: 10px !important;
+        transition: 0.5s;
+        
+    
+    }
+    #dropclose {
+        display: block;
+
+    }
+    .drop-menu ul {
+        display: block;
+        margin-top: -180px;
+        width: 0px !important;
+    
+    
+    }
+    .drop-menu ul li {
+        line-height: 2rem;
+        justify-content: center;
+        border: none;
+        margin-left: 100px;
+        opacity: 0;
+        position: relative;
+        animation: dropmenu 0.2s forwards;
+
+    }
+    .drop-menu ul li a {
+        color: #fff;
+        font-size: 0.6rem !important;
+        text-align: left !important;
+
+    }
+    .subitems {
+        padding-bottom: 0px !important;
+    }
+    nav ul li:hover .drop-menu {
+        display: none;
+    }
+    #dropclose {
+        color: #fff !important;
+    }
+    .back-to-top {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    .left-nav {
+        margin-left: 10px;
+    }
+    #closeicon {
+        font-size: 1rem;
+        padding: 3px;
+     }
+    #left-slide-menu {
+        width: 100%;
+    }
+    .left-menu-content h1 {
+        font-size: 0.8rem;
+    }
+    .left-menu-content p {
+        font-size: 0.5rem;
+        width: 270px;
+        line-height: 1rem !important;
+        margin-top: 10px;
+    }
+    .latest-photos::before {
+        width: 35%;
+        height: 2px;
+        top: 20px;
+    }
+    /* === navigation bar === */
+
+    /* === home Slider  === */
+   
+    .slider-1-content h1 {
+        font-size: 1.5rem !important;
+    }
+    .btn {
+        padding: 5px 5px !important;
+        font-size: 0.5rem;
+    }
+    .prev,.next {
+        padding: 1px !important;
+        border: 1px solid var(--mybtn) !important;
+        font-size: 0.6rem;
+    }
+   
+    .social-icons a {
+        font-size: 0.6rem;
+        margin-left: 15px;
+    }
+
+    /* === home Slider  === */
+   
+    .round:nth-child(1) {
+        position: relative;
+        left: 10px;
+    }
+    .round-2 {
+        position: relative;
+        right: 10px;
+    }
+    
+    .word {
+        font-size: 1.5rem;
+    }
+    .word-1 {
+        font-size: 1.5rem;
+
+    }
+    .creativetitle {
+        font-size: 1.7rem !important;
+    }
+    .creative-studio {
+        margin-left: 70px !important;
+    }
+    .services-con ion-icon {
+        font-size: 2.5rem !important;
+    }
+    .services-1 p {
+        font-size: 0.7rem;
+        margin-top: -10px;
+    }
+    .studio-sec-1 {
+        width: 250px;
+
+    }
+    .studio-sec-1 h1 {
+        font-size: 1.5rem;
+    }
+    .studio-sec-1 p {
+        width: 270px;
+    }
+    .studio-sec-1 img {
+        width: 600px;
+        height: 485px;
+        position: relative;
+        left: 25px !important;
+        top: -30px !important;
+    }
+    
+    .creative-studio {
+        width: 100%;
+        grid-template-columns: 350px !important;
+        margin-left: 0px !important;
+    } 
+    .studio-sec-1 {
+        width: 350px !important;
+
+    }
+
+    
+    .studio-sec-1 img {
+        width: 350px !important;
+        height: 303px !important;
+        margin-left: -24px;
+    } 
+
+     /* === contact section  */
+
+}
+
+@media (min-width:600px) and (max-width:850px) {
+    html {
+        font-size: 15px;
+    }
+    /* === navigation bar === */
+    .hamburgermenu {
+        display: block;
+    
+    }
+
+
+    #rightnavitems {
+        position: absolute;
+        left: -100%;
+
+    }
+    
+    nav ul {
+        display: block ;
+        width: 100vw;
+        background-color: #000;
+        position: absolute;
+        transition: 0.5s;
+        height: 100vh;
+        top: 85px;
+        left: -100%;
+    }
+    nav ul li {
+        text-align: center !important;
+        line-height: 2rem;
+    }
+    nav ul li {
+        margin-left: 0px;
+    }
+   
+    nav ul li a:hover::before {
+        width: 0px;
+    }
+   
+    .drop-menu {
+        display: none;
+        position: absolute;
+        z-index: 100000000000;
+        width: 100px !important;
+        transition: 0.5s;
+        left: 65%;
+        
+    
+    }
+    
+    .drop-menu ul {
+        display: block;
+        margin-top: -180px;
+        background-color: var(--text-b);
+        width: 0px !important;
+    
+    
+    }
+    .drop-menu ul li {
+        line-height: 2rem;
+        justify-content: center;
+        border: none;
+        margin-left: 100px;
+        opacity: 0;
+        position: relative;
+        animation: dropmenu 0.2s forwards;
+    }
+    .drop-menu ul li a {
+        color: #fff;
+    }
+    #dropclose {
+        color: #fff !important;
+    }
+    .subitems {
+        padding-bottom: 0px !important;
+    }
+    nav ul li:hover .drop-menu {
+        display: none;
+    }
+    .back-to-top {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+    }
+    /* === navigation bar === */
+
+    /* === home Slider  === */
+
+    .slider-1-content h1 {
+        font-size: 2rem;
+    }
+
+    /* === home Slider  === */
+
+
+
+    /* === Creative studio services === */
+
+
+    .creative-studio {
+        width: 100%;
+        grid-template-columns: 500px !important;
+        margin-left: -50px;
+    } 
+    .studio-sec-1 {
+        width: 400px;
+
+    }
+
+    .studio-sec-1 img {
+        width: 400px;
+        position: relative;
+        right: 50px;
+    }
+
+    /* === Creative studio services === */
+
+
+}
+@media only screen and (max-width:1130px) {
+
+
+    /* === Creative studio services === */
+
+    .creative-studio {
+        grid-template-columns: 650px ;
+    }
+    .studio-sec-1 {
+        width: 450px;
+
+    }
+    .studio-sec-1:nth-child(2) {
+        width: 450px;
+    }
+    .studio-sec-1 img {
+        width: 600px;
+        height: 485px;
+        position: relative;
+        left: 0px;
+        top: 2px;
+    }
+    /* === Creative studio services === */
+
+
+}
+@media (min-width:1130px) and (max-width:1299px) {
+
+    /* === Creative studio services === */
+
+    
+    .studio-sec-1 {
+        width: 450px;
+
+    }
+    .studio-sec-1:nth-child(2) {
+        width: 450px;
+    }
+    .studio-sec-1 img {
+        width: 550px;
+        height: 485px;
+        position: relative;
+        right: 50px;
+        top: 2px;
+    }
+    
+
+    }
+
+@media only screen and (min-width:1300px) {
+
+    /* === Creative studio services === */
+
+    .studio-sec-1 {
+        width: 450px;
+
+    }
+    .studio-sec-1:nth-child(2) {
+        width: 450px;
+    }
+    .studio-sec-1 img {
+        width: 550px;
+        height: 485px;
+        position: relative;
+        right: 50px;
+        top: 2px;
+    }
+
+    /* === Creative studio services === */
+
+}
+   
+

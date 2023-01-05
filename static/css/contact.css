@@ -1,0 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+:root {
+    --mybtn: #ff002e;
+    --text-w: #fff;
+    --bg: #121212;
+    --text-b: #fff;
+    --black: #000;
+    --services-light: #ff002e;
+    --services-light-1: #ff002e;
+    --blog-cart: #000;
+
+}
+:root {
+    --font-weight:600;
+    
+}
+.dark-theme {
+    --mybtn: #ff002e;
+    --text-w: #000 !important;
+    --bg: #fff;
+    --text-b: #000;
+    --font-weight: 600;
+    --blog-cart: rgba(250, 243, 243, 0.945);
+
+
+
+}
+.contact {
+    display: flex;
+    height:auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.contact-title {
+    color: var(--mybtn);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px !important;
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact-grid ion-icon {
+    padding: 20px;
+    border: 2px solid var(--mybtn);  
+    border-radius: 150px;
+    font-size: 2rem;  
+}
+.contact-grid p {
+    font-size: 0.8rem;
+    font-weight: var(--font-weight);
+}
+.main-description {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-top: 50px;
+    width: 100%;
+}
+.descriptionofcontact {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    width: 80%;
+    font-weight: var(--font-weight);
+
+}
+.contact-form h1 {
+    font-size: 1.8rem;
+}
+.form {
+    display: flex;
+    justify-content: center;
+}
+input {
+    outline: none;
+    border-bottom: 2px solid var(--mybtn);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid var(--mybtn);
+    background-color: transparent;
+    font-weight: var(--font-weight);
+    color: var(--text-b);
+
+}
+select {
+    outline: none;
+    border-bottom: 2px solid var(--mybtn);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid var(--mybtn);
+    background-color: transparent;
+    color: var(--text-b);
+    font-weight: var(--font-weight);
+    text-indent: 15px;
+   
+}
+option {
+    background-color: var(--mybtn);
+    font-weight: var(--font-weight);
+    line-height: 2rem !important;
+
+}
+textarea {
+    outline: none;
+    border-bottom: 2px solid var(--mybtn);
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid var(--mybtn);
+    background-color: transparent;
+    color: var(--text-b);
+    font-weight: var(--font-weight);
+    resize: none;
+    height: 100px;
+}
+label {
+    display: none;
+}
+input[type=submit] {
+    background-color: var(--mybtn);
+    cursor: pointer;
+    transition: 0.2s;
+    border: 2px solid var(--mybtn);
+    color: var(--text-b);
+
+}
+input[type=submit]:hover {
+    background-color: transparent;
+    color: var(--text-b);
+}
+.thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.thanks-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--mybtn);
+    width: 800px;
+}
+.thanks button {
+    padding: 10px 50px;
+    background-color: var(--mybtn);
+    border: 2px solid var(--mybtn);
+    font-size: 0.8rem;cursor: pointer;
+    font-weight: var(--font-weight);
+    color: var(--text-b);
+    transition: 0.2s;
+}
+.thanks button:hover {
+    background-color:transparent;
+}
+.thanks p {
+    font-weight: var(--font-weight);
+}
+
+@media(min-width:200px) and (max-width:600px) {
+    /* .contact {
+        margin-top: 390px;
+    } */
+    .contact-grid {
+        grid-template-columns: 300px;
+        row-gap: 40px;
+    }
+    .contact-title {
+        font-size: 2rem;
+    }
+    .descriptionofcontact {
+        font-size: 1rem !important;
+    }
+    .letsdiscuss {
+        font-size: 1rem ;
+
+    }
+    .contact-form h1 {
+        font-size: 1rem !important;
+        width: 80%;
+        margin-left: 40px;
+        
+    }
+    #mybtn {
+        right: 40px;
+    }
+}  
+@media(min-width:600px) and (max-width:900px) {
+    .contact-grid {
+        grid-template-columns: repeat(2,300px);
+        row-gap: 40px;
+    }
+}   

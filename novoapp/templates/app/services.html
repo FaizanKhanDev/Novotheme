@@ -1,0 +1,64 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block main-content %}
+
+<div class="height" style="width: 100%; height: 80px; background-color: black;"></div>
+
+
+<div class="services">
+    <div>
+      {% for mainservicetitle in mainservicetitle %}
+          <h1 class="text-center titleofservices">{{mainservicetitle.title}}</h1>
+          <br />
+      <div style="display:flex;justify-content:center"> <h1 class="word" style="position: absolute !important;"></h1>
+      </div> 
+
+        <br />
+        <br />
+        {% endfor %}
+        <div class="container">
+            <div class="card-container">
+                {% for mainservice in mainservice %}
+                    <div class="card-wrapper">
+                        <div class="card light">
+                        <div class="text-overlay">
+                            <h2>{{mainservice.frontitle}}</h2>
+                            <div class="details-text">
+                                <span>{{mainservice.description}}</span>
+                            </div>
+                        </div>
+                        <div class="purchase-button-container">
+                            <h2 class="back-h2">{{mainservice.backtitle}}</h2>
+                            <div class="purchase-button light">
+                                <a href="">{{mainservice.btn}}</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          
+          
+          
+
+    </div>
+   
+      
+    
+       
+
+
+{% endblock main-content %}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block main-content %}
+
+    <div class="slideshow">
+        <div class="holder">
+            {% for homebackground in homebackground %}
+                <section class="slide-1" style="background-image: url({{homebackground.backgroundimg.url}});">
+                    <div class="slider-1-content">
+                        <div class="slider-1-con-sec-1">
+                            <h1 class="hometitle">{{homebackground.bgtitle}}  </h1>
+                            <a href="#"><button class="btn home-btn">{{homebackground.homebtn}}</button></a>
+                        </div>
+                    </div>
+                </section>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="next-prev">
+        <ion-icon name="chevron-back-outline" class="prev"></ion-icon></a>
+        <ion-icon name="chevron-forward-outline" class="next"></ion-icon>
+    </div>
+     <br /><br /><br />
+     {% for creativetitle in creativetitle %}
+     <h1 class="text-center creativetitle">{{creativetitle.title}}</h1>
+     {% endfor %}
+    {% for creative in creative %}
+    <div class="creative-studio">
+
+      <div class="studio-sec-1 pd-2 blog-cart">
+        <div class="">
+            <h1>{{creative.title1}} <br />
+                <span>{{creative.title2}}</span>  
+            </h1>
+            <p>
+                {{creative.description1}}
+            </p>
+            <p>          
+                {{creative.description2}}
+            </p>
+            <a href="">{{creative.btn}} <ion-icon name="chevron-forward-outline"></ion-icon></a>
+         
+        </div>
+          
+
+      </div>
+      <div class="studio-sec-1">
+          <img src="{{creative.img.url}}" alt="">
+      </div>
+    </div>
+    
+    {% endfor %}
+
+  
+
+  
+    {% endblock main-content %}

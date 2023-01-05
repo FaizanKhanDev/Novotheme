@@ -1,0 +1,209 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+:root {
+    --mybtn: #ff002e;
+    --text-w: #fff;
+    --bg: #121212;
+    --text-b: #fff;
+    --black: #000;
+    --services-light: #ff002e;
+    --services-light-1: #ff002e;
+    --blog-cart: #000;
+
+}
+:root {
+    --font-weight:600;
+    
+}
+.dark-theme {
+    --mybtn: #ff002e;
+    --text-w: #000 !important;
+    --bg: #fff;
+    --text-b: #000;
+    --font-weight: 600;
+    --blog-cart: rgba(250, 243, 243, 0.945);
+
+
+
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 20px !important;
+
+}
+
+  
+a {
+    text-decoration: none;
+}
+
+/* === back to top btn === */
+
+.back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+}
+#mybtn {
+    border: 2px solid var(--mybtn);
+    padding: 3px 5px;
+    cursor: pointer;
+    color: var(--mybtn);
+    z-index: 1000000000;
+    transition: 0.3s;
+}
+
+
+#mybtn:hover {
+    background-color: var(--mybtn);
+    color: var(--text-w);
+
+}
+.prev:hover {
+    background-color: var(--mybtn);
+    color: var(--text-w);
+}
+.next:hover {
+    background-color: var(--mybtn);
+    color: var(--text-w);
+}
+/* === back to top btn === */
+
+.social-icons {
+    position: absolute;
+    left: -90px;
+    z-index: 10000;
+    top: 50%;
+    transform: rotate(90deg);
+}
+.social-icons a  {
+    color: var(--text-w);
+    font-weight: 100;
+    font-size: 0.8rem;
+    margin:5px;
+    transition: 0.4s;
+    color: #fff;
+
+
+
+}
+.social-icons a ion-icon {
+    margin:5px;
+    position: relative;
+    bottom: -7px;
+    color: #fff;
+}
+.social-icons a:hover  {
+    color: var(--mybtn);
+}
+/* === logo slider section === */
+
+.logo-slider {
+    width: 100vw;
+    background-color: var(--bg);
+}
+.section-padding {
+    background-color: #000;
+    position: relative;
+    top: 25px;
+}
+/* === whats We Do === */
+
+
+
+
+
+
+
+.word {
+    color: #000;
+    text-align: center;
+}
+
+
+/* === services We Do === */
+
+
+/* === Creative studio  === */
+.creativetitle {
+    color: var(--mybtn);
+    font-size: 3rem !important;
+    font-weight: 600;
+}
+.creative-studio {
+    display: grid;
+    grid-template-columns: repeat(2,650px);
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.studio-sec-1 {
+    align-self: center;
+    width: 500px;
+}
+.blog-cart {
+    background-color: var(--blog-cart);
+
+}
+.studio-sec-1:nth-child(1) {
+    margin-right: 50px;
+}
+.studio-sec-1 h1 {
+    color: var(--text-b);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.studio-sec-1 h1 span {
+    color: var(--mybtn);
+}
+.studio-sec-1 p {
+    width: 450px;
+    margin-top: 20px;
+    font-size: 0.8rem !important;
+    line-height: 1.5rem;
+    color: var(--text-b);
+    font-weight: var(--font-weight);
+
+}
+.studio-sec-1 p:nth-of-type(2) {
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+}
+.studio-sec-1 a {
+    color: var(--mybtn);
+    font-size: 0.7rem;
+    transition: 0.5s;
+
+}
+.studio-sec-1 a ion-icon {
+    margin-top: 30px;
+    position: relative;
+    top: 3px;
+}
+.studio-sec-1 a:hover {
+    margin-left: 10px;
+    color: var(--text-b);
+}
+.studio-sec-1 img {
+    width: 600px;
+    top: -5px !important;
+    
+}
+.pd-2 {
+    width: 600px !important;
+    padding: 50px;
+}
+/* === Creative studio  === */
+
+
+
+  
+
+
+
+
+

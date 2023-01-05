@@ -1,0 +1,213 @@
+{% extends 'app/base.html' %}
+{% load static %} 
+{% block main-content %}
+
+
+
+<div class="height" style="width: 100%; height: 80px; background-color: black;"></div>
+<div class="mainblock">
+        <div class="blog">
+            <div class="blog-container">
+                <div class="blog-header">
+                    <div class="blog-title">
+                        <h1>Blog Grid</h1>
+                    </div>
+                    <div class="blog-work">
+                        <ul class="blog-navigation">
+                          <li><a href="" class="active">All</a></li>
+                          <li><a href="">Graphic Designing</a></li>
+                          <li><a href="">Web Development</a></li>
+                          <li><a href="">Digital Marketing</a></li>
+                          <li><a href="">SEO/SEM</a></li>
+                       </ul>
+                       <div class="blog-cont">
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/picmenu-6.jpg' %}" alt="" class="blog-img">
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            <!-- <div class="blog-sec-1">
+                            </div> -->
+                            <!-- <div class="blog-sec-1">
+                            </div> -->
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/photo-1556103255-4443dbae8e5a.jpg' %}" alt="" class="blog-img">
+
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/homeslider-1.jpg' %}" alt="" class="blog-img">
+
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/homeslider-2.jpg' %}" alt="" class="blog-img">
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/homeslider-4.jpg' %}" alt="" class="blog-img">
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/picmenu-6.jpg' %}" alt="" class="blog-img">
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/photo-1548140385-6bbbb4824faf.jpg' %}" alt="" class="blog-img">
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/photo-1548140385-6bbbb4824faf.jpg' %}" alt="" class="blog-img">
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            <div class="blog-sec-1">
+                                <img src="{% static 'app/img/photo-1548140385-6bbbb4824faf.jpg' %}" alt="" class="blog-img">
+                                <div class="blog-content">
+                                    <h1>Wishing Well</h1>
+                                     <br />
+                                    <span>September 15, 2017</span>
+                                    <ion-icon name="lock-closed" class="lock"></ion-icon>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                         ullamco laboris
+                                    </p>
+                                     <br />
+                                    <hr />
+                                   <a href=""  class="like"><ion-icon name="heart-outline"></ion-icon>36Likes</a> 
+                                    <a href=""  class="comment"><ion-icon name="chatbox-outline"></ion-icon>Comments</a>
+                                </div>
+                               
+                            </div>
+                            
+                            
+                       </div>
+                      </div>
+                </div>
+               
+            </div>
+            
+        </div>
+    </div>
+<div class="height-forblog" style="height: 1900px;"></div>
+
+{% endblock main-content %}
+
+
+
+
+
+
+
+
+

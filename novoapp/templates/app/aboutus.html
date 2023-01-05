@@ -1,0 +1,163 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block main-content %}
+<div class="height" style="width: 100%; height: 80px; background-color: black;"></div>
+
+
+
+
+<br />
+<br />
+<br />
+
+
+
+    <div class="aboutus">
+        <div class="about-con">
+            <div class="container-sec-1">
+                <div>
+                {% for aboutsec_1 in aboutsec_1 %}
+                <h1>{{aboutsec_1.title}}
+                  <span>{{aboutsec_1.subtitle}}</span>   
+                </h1>
+                    <p class="about-p">
+                        {{aboutsec_1.description}}
+                    </p>
+                    <p class="about-p-2">
+                        {{aboutsec_1.subdescription}}
+                    </p>
+                            <br />
+                           <a href="" class="about-btn">{{aboutsec_1.btn}} <ion-icon name="chevron-forward-outline"></ion-icon></a>
+                           <br />
+                        
+            </div>
+           
+        </div>
+        <div class="container-sec-1">
+            <img src="{{aboutsec_1.img.url}}" alt="" class="about-img">
+        </div>
+        {% endfor %}
+
+        </div>
+        
+    </div>
+  
+    <div class="about-con-2">
+        <div class="container-2-sec-1">
+            {% for myskills in myskills %}
+                <img src="{{myskills.img.url}}" alt="" class="about-img about-img-2">
+            </div>
+            <div class="container-2-sec-1">
+                <div>
+           
+                    <h1 class="text-center">{{myskills.title}}</h1>
+                    <br />
+                    <br />
+                        <div class="skill-bar">
+                        <p>{{myskills.skillsName1}}</p> 
+                            <div class="progress-bar-seo"></div>
+                            <span class="percentage-seo">{{myskills.progress}}</span>
+                            <br />
+                        </div>
+                        <div class="skill-bar">
+                            <p>{{myskills.skillsName2}}</p> 
+                            <div class="progress-bar-webdesign"></div>
+                            <span class="percentage-webdesign">{{myskills.progress2}}</span>
+                            <br />
+                        </div>
+                        <div class="skill-bar">
+                            <p>{{myskills.skillsName3}}</p> 
+                            <div class="progress-bar-animations"></div>
+                            <span class="percentage-animations">{{myskills.progress3}}</span>
+                            <br />
+                        </div>
+                        <div class="skill-bar">
+                            <p>{{myskills.skillsName4}}</p> 
+                            <div class="progress-bar-graphicsdesgining"></div>
+                            <span class="percentage-graphicsdesgining">{{myskills.progress4}}</span>
+                            <br />
+                        </div>
+                        <div class="skill-bar">
+                            <p>{{myskills.skillsName5}}</p> 
+                            <div class="progress-bar-digital-marketing"></div>
+                            <span class="percentage-digital-marketing">{{myskills.progress5}}</span>
+                            <br />
+                        </div>
+                        <div class="skill-bar">
+                            <p>{{myskills.skillsName6}}</p> 
+                            <div class="progress-bar-SocialMedia"></div>
+                            <span class="percentage-SocialMedia">{{myskills.progress6}}</span>
+                            <br />
+                        </div>
+                        <div class="skill-bar">
+                            <p>{{myskills.skillsName7}}</p> 
+                            <div class="progress-bar-EmailMarketing"></div>
+                            <span class="percentage-EmailMarketing">{{myskills.progress7}}</span>
+                            <br />
+                        </div>
+                        <div class="skill-bar">
+                            <p>{{myskills.skillsName8}}</p> 
+                            <div class="progress-bar-ADsManagement"></div>
+                            <span class="percentage-ADsManagement">{{myskills.progress8}}</span>
+                            <br />
+                        </div>
+                        <div class="skill-bar">
+                            <p>{{myskills.skillsName9}}</p> 
+                            <div class="progress-bar-WebDevelopement"></div>
+                            <span class="percentage-WebDevelopement">{{myskills.progress9}}</span>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+        {% endfor %}
+    </div>
+    <br />
+    <br />  <br />
+    <br />
+    <div class="whychooseme">
+        {% for whychooseme in whychooseme %}
+            <h1 class="text-center">{{whychooseme.maintitle}}</h1>
+            <div class="whyMe-con">
+                <div class="whyMesec-1">
+                <p class="text-center"><ion-icon name="videocam-outline"></ion-icon></p>  
+                    <h3>{{whychooseme.subtitle1}}</h3>
+                    <p>{{whychooseme.description}}
+
+                    </p>
+                </div>
+                <div class="whyMesec-1">
+                    <p class="text-center"><ion-icon name="podium-outline"></ion-icon></p> 
+                    <h3>{{whychooseme.subtitle2}}</h3>
+                    <p>{{whychooseme.description2}}
+                    </p>
+                </div>
+                <div class="whyMesec-1">
+                <p class="text-center"><ion-icon name="cog-outline"></ion-icon></p>  
+                    <h3>{{whychooseme.subtitle3}}</h3>
+                    <p>{{whychooseme.description3}}.
+                    </p>
+                </div>
+                <div class="whyMesec-1">
+                <p class="text-center"><ion-icon name="cellular-outline"></ion-icon></p>  
+                    <h3>{{whychooseme.subtitle4}}</h3>
+                <p>{{whychooseme.description4}}.
+                    </p>
+                </div>
+                <div class="whyMesec-1">
+                <p class="text-center"><ion-icon name="eye-outline"></ion-icon></p>  
+                    <h3>{{whychooseme.subtitle5}}</h3>
+                    <p>{{whychooseme.description5}}
+                    </p>
+                </div>
+                <div class="whyMesec-1">
+                <p class="text-center"> <ion-icon name="aperture-outline"></ion-icon></p> 
+                    <h3>{{whychooseme.subtitle6}}</h3>
+                    <p>{{whychooseme.description6}}
+                    </p>
+                </div>
+            </div>
+        </div>
+{% endfor %}
+{% endblock main-content %}
+
+    

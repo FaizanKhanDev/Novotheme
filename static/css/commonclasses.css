@@ -1,0 +1,57 @@
+/* :root {
+    --mybtn: #c99a67;
+} */
+html {
+    font-size: 20px;
+}
+.btn {
+    border: 1px solid var(--mybtn);
+    background-color: transparent;
+    padding: 10px 30px;
+    color: var(--text-b);
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 100;
+    transition: 0.3s;
+    --webkit-transition:0.3s;
+    font-weight: var(--font-weight);
+}
+.btn:hover {
+    background-color: var(--mybtn);
+}
+.text-center {
+    text-align: center;
+}
+.mb-2 {
+    margin-bottom: 30px;
+}
+.position-relative {
+    position: relative;
+}
+.line-height-1 {
+    line-height: 1.5rem;
+}
+.mt-2 {
+    margin-top: 20px;
+}
+.mt-4 {
+    margin-top: 40px;
+}
+.ml-2 {
+    margin-left: 20px;
+}
+.mr-2 {
+    margin-right: 15px;
+
+}
+.absolute {
+    position: absolute;
+    z-index: 10000;
+}
+.text-w {
+    color: var(--text-w);
+}
+.display-flex {
+    display: flex;
+}
